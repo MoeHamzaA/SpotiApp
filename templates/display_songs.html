@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Top Tracks</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/display_songs.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Top Tracks for {{ artist }}</h1>
+      </div>
+
+      <div class="songList">
+        <ul>
+          {% for song in songs %}
+          <li class="song">{{ song }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

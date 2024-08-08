@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* or any desired height */
+  background-image: url("../images/home.jpg"); /* Relative path from the CSS file to the image */
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  border-radius: 20px;
+  display: inline-block;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.066);
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  -webkit-backdrop-filter: blur(10px);
+}
+.song {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding-right: 12px;
+}
+.song:hover {
+  transform: scale(1.1);
+}
+.songList {
+  padding: 1px 0px 1px 0px;
+  border-radius: 10px;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.021);
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+.title {
+  text-align: center;
+}

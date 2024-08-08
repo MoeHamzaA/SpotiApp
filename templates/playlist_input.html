@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter Playlists</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/playlist_input.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="{{ url_for('playlist_input') }}" method="post">
+        <label for="playlist1">Enter Playlist 1 Link:</label><br />
+        <input
+          class="input"
+          type="text"
+          id="playlist1"
+          name="playlist1"
+          placeholder="Enter Here"
+        /><br />
+        <label for="playlist2">Enter Playlist 2 Link:</label><br />
+        <input
+          class="input"
+          type="text"
+          id="playlist2"
+          name="playlist2"
+          placeholder="Enter Here"
+        /><br /><br />
+        <div class="submitArea">
+          <input class="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
